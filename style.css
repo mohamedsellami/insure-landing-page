@@ -1,0 +1,624 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Karla", sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 5% 4%;
+}
+
+header nav ul {
+  display: none;
+}
+
+header .humberger {
+  display: inline-block;
+  width: 40px;
+  height: 38px;
+  border: 2px solid #2d2640;
+  position: relative;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+header .humberger .line {
+  width: 25px;
+  height: 4px;
+  border-radius: 100px;
+  background-color: #2d2640;
+  margin: 7px auto;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+header .humberger .line::before {
+  content: "";
+  width: 25px;
+  height: 4px;
+  border-radius: 100px;
+  background-color: #2d2640;
+  margin: 8px auto;
+  position: absolute;
+}
+
+header .humberger .line::after {
+  content: "";
+  width: 25px;
+  height: 4px;
+  border-radius: 100px;
+  background-color: #2d2640;
+  margin: 16px auto;
+  position: absolute;
+}
+
+.x .line {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin: 15px;
+  width: 24px;
+  position: relative;
+  top: 8px;
+}
+
+.x .line:before {
+  -webkit-transform: rotate(89deg);
+          transform: rotate(89deg);
+  top: -7px;
+  width: 24px;
+}
+
+.x .line::after {
+  display: none;
+}
+
+.navigation-mobile {
+  width: 100%;
+  height: 90vh;
+  background-color: #2b272f;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  position: absolute;
+  z-index: 3;
+  display: none;
+  background-image: url(../images/bg-pattern-mobile-nav.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+}
+
+.navigation-mobile nav ul {
+  text-align: center;
+  padding: 0;
+  padding-top: 30px;
+}
+
+.navigation-mobile nav ul li {
+  list-style: none;
+  padding: 3% 0;
+}
+
+.navigation-mobile nav ul li a {
+  text-decoration: none;
+  font-size: 7vw;
+  color: white;
+  text-transform: uppercase;
+}
+
+.navigation-mobile nav ul li a:hover {
+  color: #837d87;
+}
+
+.navigation-mobile nav ul li button {
+  width: 80%;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid white;
+  font-size: 5vw;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.navigation-mobile nav ul li button:hover {
+  background-color: white;
+  color: #2b272f;
+}
+
+.welcome-section {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+}
+
+.welcome-section::after {
+  content: "";
+  width: 124px;
+  height: 340px;
+  background-image: url(../images/bg-pattern-intro-right-mobile.svg);
+  position: absolute;
+  background-repeat: no-repeat;
+  right: 0;
+  top: 86%;
+}
+
+.welcome-section .desktop-image {
+  display: none;
+}
+
+.welcome-section .mobile-image {
+  width: 100%;
+}
+
+.welcome-section .content {
+  display: inline-block;
+  width: 100%;
+  background-color: #2d2640;
+  z-index: -1;
+  padding: 90px 9%;
+  margin-top: -5px;
+  background-image: url(../images/bg-pattern-intro-left-mobile.svg);
+  background-repeat: no-repeat;
+}
+
+.welcome-section .content h1 {
+  color: white;
+  font-size: 11vw;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  line-height: 50px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.welcome-section .content p {
+  color: white;
+  width: 100%;
+  line-height: 30px;
+  text-align: center;
+  font-size: 4vw;
+}
+
+.welcome-section .content .line {
+  display: none;
+}
+
+.welcome-section .content .button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.welcome-section .content .button button {
+  width: 150px;
+  height: 40px;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: white;
+  border: 1px solid white;
+  letter-spacing: 2px;
+  font-weight: 700;
+  display: inline-block;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.welcome-section .content .button button:hover {
+  background-color: white;
+  color: #2d2640;
+}
+
+.main-section {
+  width: 100%;
+  margin-top: 150px;
+  padding: 0 9%;
+  text-align: center;
+}
+
+.main-section .main-section-line {
+  width: 200px;
+  border-top: 2px solid lightgrey;
+  margin: auto;
+}
+
+.main-section h2 {
+  font-family: "DM Serif Display", serif;
+  color: #2b272f;
+  font-size: 10vw;
+  font-weight: 400;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.main-section .details div h3 {
+  font-family: "DM Serif Display", serif;
+  color: #2b272f;
+  font-weight: 400;
+  font-size: 7vw;
+  margin-bottom: 10px;
+}
+
+.main-section .details div p {
+  color: #837d87;
+  width: 100%;
+  line-height: 25px;
+  margin: auto;
+  margin-bottom: 50px;
+  font-size: 4vw;
+}
+
+.main-section .how-we-work {
+  width: 100%;
+  background-color: #2d2640;
+  padding: 70px 0px 80px 0px;
+  background-image: url(../images/bg-pattern-how-we-work-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  margin-top: 150px;
+}
+
+.main-section .how-we-work h2 {
+  font-family: "DM Serif Display", serif;
+  font-size: 10vw;
+  color: white;
+  margin: auto;
+  width: 90%;
+  line-height: 100%;
+}
+
+.main-section .how-we-work .button {
+  width: 40%;
+  margin: 50px auto 0px auto;
+}
+
+.main-section .how-we-work .button button {
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  text-transform: uppercase;
+  font-size: 2vw;
+  padding: 15px 10px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.main-section .how-we-work .button button:hover {
+  background-color: white;
+  color: #2d2640;
+}
+
+footer {
+  margin-top: 200px;
+  padding: 0 9%;
+  background-color: #fafafa;
+  background-image: url(../images/bg-pattern-footer-desktop.svg);
+  background-repeat: no-repeat;
+}
+
+footer .first-section {
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
+  padding-top: 60px;
+  padding-bottom: 35px;
+  text-align: center;
+}
+
+footer .first-section .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 160px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+footer .first-section .social-media div {
+  cursor: pointer;
+}
+
+footer .first-section .social-media div .fab {
+  font-size: 30px;
+  color: #837d87;
+}
+
+footer .first-section .social-media div:hover .fab {
+  color: #2b272f;
+}
+
+footer .about-us {
+  padding-bottom: 60px;
+}
+
+footer .about-us div h4 {
+  color: #837d87;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+footer .about-us div ul {
+  padding-left: 0;
+  text-align: center;
+}
+
+footer .about-us div ul li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+footer .about-us div ul li a {
+  text-decoration: none;
+  color: #2b272f;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 700px) {
+  header {
+    padding: 1% 9%;
+  }
+  header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 500px;
+    margin: 5px 0 5px 0px;
+  }
+  header nav ul li {
+    list-style-type: none;
+    cursor: pointer;
+  }
+  header nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #837d87;
+    letter-spacing: 1px;
+    font-weight: 700;
+  }
+  header nav ul li a:hover {
+    color: #2b272f;
+  }
+  header nav ul li button {
+    width: 150px;
+    background-color: transparent;
+    border: 1px solid #2b272f;
+    color: #2b272f;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px;
+    letter-spacing: 2px;
+    cursor: pointer;
+  }
+  header nav ul li button:hover {
+    background-color: #2b272f;
+    color: white;
+  }
+  header .humberger {
+    display: none;
+  }
+  .navigation-mobile {
+    display: none;
+  }
+  .welcome-section::before {
+    content: "";
+    width: 435px;
+    height: 600px;
+    background-image: url(../images/bg-pattern-intro-right-desktop.svg);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    background-position: 0px -70px;
+    background-repeat: no-repeat;
+  }
+  .welcome-section::after {
+    content: "";
+    width: 200px;
+    height: 500px;
+    background-image: url(../images/bg-pattern-intro-left-desktop.svg);
+    position: absolute;
+    left: 0;
+    top: 410px;
+    z-index: 2;
+    background-repeat: no-repeat;
+  }
+  .welcome-section .desktop-image {
+    display: inline-block;
+    margin-top: 17%;
+    position: absolute;
+    right: 9%;
+    width: 370px;
+  }
+  .welcome-section .mobile-image {
+    display: none;
+  }
+  .welcome-section .content {
+    padding: 100px 9%;
+    background-image: none;
+    margin-top: 0;
+  }
+  .welcome-section .content h1 {
+    font-size: 4vw;
+    margin-top: 70px;
+    text-align: start;
+  }
+  .welcome-section .content p {
+    width: 34%;
+    text-align: start;
+    font-size: 16px;
+  }
+  .welcome-section .content .line {
+    display: inline-block;
+    width: 150px;
+    border: 1px solid white;
+  }
+  .welcome-section .content .button {
+    margin: 0;
+  }
+  .welcome-section .content .button button {
+    margin: auto;
+  }
+  .main-section {
+    margin-top: 300px;
+    text-align: unset;
+  }
+  .main-section .main-section-line {
+    margin: 0;
+  }
+  .main-section h2 {
+    font-size: 90px;
+  }
+  .main-section .details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main-section .details div {
+    margin-top: 50px;
+  }
+  .main-section .details div h3 {
+    font-size: 30px;
+  }
+  .main-section .details div p {
+    width: 350px;
+    margin: 0;
+    font-size: 16px;
+  }
+  .main-section .how-we-work {
+    padding: 65px 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url(../images/bg-pattern-how-we-work-desktop.svg);
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-position: right;
+  }
+  .main-section .how-we-work h2 {
+    font-size: 3vw;
+    margin: 0;
+    width: 50%;
+    line-height: 60px;
+  }
+  .main-section .how-we-work .button {
+    margin: 0;
+    width: 150px;
+  }
+  .main-section .how-we-work .button button {
+    font-size: 13px;
+  }
+  footer {
+    background-image: url(../images/bg-pattern-footer-desktop.svg);
+  }
+  footer .first-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: start;
+  }
+  footer .first-section .social-media {
+    margin: 0;
+  }
+  footer .about-us {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  footer .about-us div {
+    margin-left: 100px;
+  }
+  footer .about-us div ul {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1330px) {
+  .welcome-section .desktop-image {
+    width: unset;
+    margin-top: 7%;
+  }
+  .welcome-section .content h1 {
+    font-size: 60px;
+  }
+  .welcome-section .content p {
+    width: 550px;
+  }
+  .main-section .how-we-work h2 {
+    font-size: 60px;
+    width: 530px;
+  }
+  footer .about-us {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  footer .about-us div {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
