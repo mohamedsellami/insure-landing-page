@@ -183,7 +183,7 @@ header .humberger .line::after {
   background-color: #2d2640;
   z-index: -1;
   padding: 90px 9%;
-  margin-top: -5px;
+  margin-top: -7px;
   background-image: url(../images/bg-pattern-intro-left-mobile.svg);
   background-repeat: no-repeat;
 }
