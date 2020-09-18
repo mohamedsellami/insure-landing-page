@@ -591,6 +591,9 @@ footer .about-us div ul li a {
   footer .about-us div {
     margin-left: 100px;
   }
+  footer .about-us div h4 {
+    text-align: start;
+  }
   footer .about-us div ul {
     text-align: start;
   }
