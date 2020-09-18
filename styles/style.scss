@@ -504,6 +504,9 @@ footer {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       div {
+        h4{
+          text-align: start;
+        }
         margin-left: 100px;
         ul {
           text-align: start;
